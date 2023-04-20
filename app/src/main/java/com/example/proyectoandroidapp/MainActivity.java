@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText et_nombre;
     private Button bt_jugar;
     private TextView tv1,tv_nuestro;
+    ImageView iv_inicio;
 
 
     @Override
@@ -26,10 +28,34 @@ public class MainActivity extends AppCompatActivity {
 
         et_nombre = (EditText) findViewById(R.id.et_nombre);
         String nombre = et_nombre.getText().toString();
+        iv_inicio=(ImageView)findViewById(R.id.iv_inicio);
+
+
+
+        for (int i =1; i<=2;i++) {
+            int numero = (int) (Math.random() * 2 +1);
+
+            Integer [] imagenes = {R.drawable.image0, R.drawable.image2};
+
+
+            switch (numero){
+                case 1:
+                    numero= 0;
+                    iv_inicio.setImageResource(imagenes[0]);
+                    break;
+                case 2:
+                    numero= 1;
+                    iv_inicio.setImageResource(imagenes[1]);
+                    break;
+
+            }
+        }
 
 
 
     }
+
+
     //metodo boton jugar
 
     public void jugar(View view){
@@ -46,20 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    //metodo para imagen central
-    public void Imagen(View view){
-        for (int i =1; i<=3;i++) {
-            int numero = (int) (Math.random() * 3 + 1);
-            ArrayList numeros= new ArrayList<>();
 
-            if(numeros.contains(numero)){
-                i--;
-            }else{
-                numeros.add(numero);
-            }
-//hacer switch
-        }
-
-    }
 
 }
