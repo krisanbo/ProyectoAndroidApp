@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProyectoAndroidApp</string>
+    <string name="et_nombre">Nombre jugador</string>
+    <string name="bt_jugar">Jugar</string>
+    <string name="tv1">record</string>
+    <string name="tv_nuestro">Ivan Jacome y Cristina Sanchez</string>
+</resources>
