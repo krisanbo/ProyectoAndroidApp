@@ -5,65 +5,61 @@
     android:id="@+id/iv_inicio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="30sp"
+    android:background="@drawable/androidpassport"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/et_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="364dp"
+        android:background="#CFBD1E"
         android:contentDescription="@string/app_name"
         android:ems="10"
         android:hint="@string/et_nombre"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="360dp" />
-
-    <Button
-        android:id="@+id/bt_jugar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="jugar"
-        android:text="@string/bt_jugar"
-        app:layout_constraintTop_toBottomOf="@+id/et_nombre"
-        tools:layout_editor_absoluteX="149dp" />
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="235dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/bt_jugar"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_nuestro"
-        android:layout_width="213dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="139dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/tv_nuestro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.796" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="366dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="44dp"
-        android:text="VIAJA CON BANDERAS"
-        android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="29dp" />
-
-    <ImageView
-        android:id="@+id/iv_inicio"
-        android:layout_width="206dp"
-        android:layout_height="185dp"
+        android:id="@+id/tv1"
+        android:layout_width="107dp"
+        android:layout_height="161dp"
         android:layout_marginTop="36dp"
-        android:contentDescription="@string/iv_inicio"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/image0"
-        tools:layout_editor_absoluteX="102dp" />
+        android:layout_marginEnd="16dp"
+        android:text="@string/tv1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="163dp"
+        android:layout_height="31dp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <ImageButton
+        android:id="@+id/bt_jugar"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:onClick="jugar"
+        app:srcCompat="@drawable/botoninicio"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="231dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
