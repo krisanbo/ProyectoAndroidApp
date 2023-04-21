@@ -7,9 +7,9 @@
     <string name="tv_record"></string>
     <string name="iv_vidas"></string>
     <string name="tv_score">visados = 0</string>
-    <string name="bt_opcion1">pais 1</string>
-    <string name="bt_opcion2">pais 2</string>
-    <string name="bt_opcion3">pais 3</string>
+    <string name="bt_opcion1"></string>
+    <string name="bt_opcion2"></string>
+    <string name="bt_opcion3"></string>
     <string name="tv_nombre"></string>
     <string name="banderas">banderas</string>
 

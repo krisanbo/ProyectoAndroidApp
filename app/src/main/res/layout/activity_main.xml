@@ -50,16 +50,19 @@
         android:id="@+id/tv_record"
         android:layout_width="163dp"
         android:layout_height="31dp"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="419dp" />
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_jugar" />
 
     <ImageButton
         android:id="@+id/bt_jugar"
         android:layout_width="92dp"
         android:layout_height="85dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
         android:onClick="jugar"
-        app:srcCompat="@drawable/botoninicio"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/botoninicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
