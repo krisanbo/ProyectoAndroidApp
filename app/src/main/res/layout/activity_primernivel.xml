@@ -58,7 +58,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/respuestas"
         android:layout_width="110dp"
         android:layout_height="148dp"
         android:layout_marginStart="48dp"
@@ -115,6 +115,6 @@
         android:layout_marginTop="56dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/respuestas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

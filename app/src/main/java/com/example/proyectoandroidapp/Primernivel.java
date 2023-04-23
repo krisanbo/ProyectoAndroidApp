@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,49 +27,54 @@ public class Primernivel extends AppCompatActivity {
         setContentView(R.layout.activity_primernivel);
 
         tv_nombre = (TextView) findViewById(R.id.tv_nombre);
-        bt_opcion1=(RadioButton)findViewById(R.id.boton_opcion1);
-        bt_opcion2=(RadioButton)findViewById(R.id.bt_opcion2);
-        bt_opcion3=(RadioButton)findViewById(R.id.bt_opcion3) ;
-        banderas=(ImageView)findViewById(R.id.banderas);
+        bt_opcion1 = (RadioButton) findViewById(R.id.boton_opcion1);
+        bt_opcion2 = (RadioButton) findViewById(R.id.bt_opcion2);
+        bt_opcion3 = (RadioButton) findViewById(R.id.bt_opcion3);
+        banderas = (ImageView) findViewById(R.id.banderas);
 // traer el nombre de la activity principal
         String viajero = getIntent().getStringExtra("nombre");
         tv_nombre.setText(viajero);
 // hacer muestre imagen aleatoria de banderas
 
-        int bandera= (int) (Math.random()*3);
-        if (bandera==0)  {
-            banderas.setImageResource(R.drawable.activityafrica);
+        int bandera = (int) (Math.random() * 3);
+        switch (bandera){
+            case 1:
+                banderas.setImageResource(R.drawable.activityeuropa);
+                break;
+            case 2:
+                banderas.setImageResource(R.drawable.activityamerica);
+                break;
+            case 3:
+                banderas.setImageResource(R.drawable.activityafrica);
+                break;
         }
-        if (bandera==1) {
-            banderas.setImageResource(R.drawable.activityamerica);
+
+        //hacer botones radiobutton aleatorios
+
+        int opciones = (int) (Math.random() * 3);
+        switch (opciones){
+            case 1:
+                bt_opcion1.setText("españa");
+                bt_opcion2.setText("alemania");
+                bt_opcion3.setText("francia");
+                break;
+            case 2:
+                bt_opcion1.setText("alemania");
+                bt_opcion2.setText("españa");
+                bt_opcion3.setText("francia");
+                break;
+            case 3:
+                bt_opcion1.setText("francia");
+                bt_opcion2.setText("alemania");
+                bt_opcion3.setText("españa");
+                break;
+
         }
-        if (bandera==2) {
-            banderas.setImageResource(R.drawable.activityeuropa);
-        }
-
-   //hacer botones radiobutton aleatorios
-
-        int opciones= (int) (Math.random()*3);
-
-        if (opciones==0){
-            bt_opcion1.setText("españa");
-            bt_opcion2.setText("alemania");
-            bt_opcion3.setText("francia");
-        }
-        if (opciones==1) {
-            bt_opcion1.setText("alemania");
-            bt_opcion2.setText("españa");
-            bt_opcion3.setText("francia");
-        }
-        if (opciones==2){
-            bt_opcion1.setText("francia");
-            bt_opcion2.setText("alemania");
-            bt_opcion3.setText("españa");
-        }
-        // unir los 2
-
-
-
-
     }
+
+
+
+
+
+
 }
