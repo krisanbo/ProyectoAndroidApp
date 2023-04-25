@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
 
     <ImageView
-        android:id="@+id/banderas"
+        android:id="@+id/iv_banderas"
         android:layout_width="139dp"
         android:layout_height="164dp"
         android:layout_marginTop="256dp"

@@ -11,7 +11,7 @@
     <string name="bt_opcion2"></string>
     <string name="bt_opcion3"></string>
     <string name="tv_nombre"></string>
-    <string name="banderas">banderas</string>
+    <string name="iv_banderas">banderas</string>
 
 
 </resources>
