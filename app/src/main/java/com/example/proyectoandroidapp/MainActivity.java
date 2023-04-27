@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText et_nombre;
     private Button bt_jugar;
-    private TextView tv1,tv_nuestro;
+    private TextView tv1, tv_nuestro;
 
 
     @Override
@@ -28,27 +28,25 @@ public class MainActivity extends AppCompatActivity {
         String nombre = et_nombre.getText().toString();
 
 
-
     }
     //metodo boton jugar
 
-    public void jugar(View view){
+    public void jugar(View view) {
         String nombre = et_nombre.getText().toString();
 
-        if (nombre.isEmpty()){
+        if (nombre.isEmpty()) {
             Toast.makeText(this, "debes introducir tu nombre", Toast.LENGTH_SHORT).show();
 
-        }else{
-            Intent jugar= new Intent(this, com.example.proyectoandroidapp.Primernivel.class);
-            jugar.putExtra("nombre",et_nombre.getText().toString());
+        } else {
+            Intent jugar = new Intent(this, com.example.proyectoandroidapp.Primernivel.class);
+            jugar.putExtra("nombre", et_nombre.getText().toString());
             startActivity(jugar);
-
 
 
         }
     }
-
-
-
-
 }
+
+
+
+

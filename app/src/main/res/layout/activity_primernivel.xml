@@ -67,22 +67,22 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_pregunta">
 
         <RadioButton
-            android:id="@+id/boton_opcion1"
+            android:id="@+id/rb_opcion1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bt_opcion1" />
+            android:text="@string/rb_opcion1" />
 
         <RadioButton
-            android:id="@+id/bt_opcion2"
+            android:id="@+id/rb_opcion2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bt_opcion2" />
+            android:text="@string/rb_opcion2" />
 
         <RadioButton
-            android:id="@+id/bt_opcion3"
+            android:id="@+id/rb_opcion3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bt_opcion3" />
+            android:text="@string/rb_opcion3" />
     </RadioGroup>
 
     <ImageView
@@ -116,5 +116,35 @@
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/respuestas" />
+
+    <Button
+        android:id="@+id/bt_comprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="20dp"
+        android:onClick="comprobar"
+        android:text="@string/bt_comprobar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_banderas" />
+
+    <TextView
+        android:id="@+id/tv_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_invisible"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nombrevisado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="204dp"
+        android:text="Visados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
